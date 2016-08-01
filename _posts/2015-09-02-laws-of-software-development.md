@@ -123,7 +123,14 @@ One of the most common quotes, although all too often heard **after** having mor
 
 This project management principle describes how uncertainty changes over time[^coneuncertainty]. It describes that uncertainty tends to decrease over the course of a project, narrowed by reductions in variability. Variability is typically reduced through research and decisions that remove uncertainty. 
 
-![Cone of Uncertainty]({{ site.url }}/images/640px-Cone_of_Uncertainty.jpg)
+{% capture fig_img %}
+![Cone of Uncertainty]({{ site.url }}{{ site.baseurl }}/images/640px-Cone_of_Uncertainty.jpg){: .align-center}
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>The Cone of Uncertainty</figcaption>
+</figure>
 
 The *Cone of Uncertainty* can be found in applications like:
 
