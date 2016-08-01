@@ -1,8 +1,8 @@
 ---
 layout: splash
 header:
-  overlay_color: "#5e616c"
-  overlay_image: mm-home-page-feature.jpg
+    overlay_color: "#5e616c"
+    overlay_image: mm-home-page-feature.jpg
 excerpt: 'Personal site of Eric Stewart, a software developer in Austin, Texas'
 feature_row:
   - image_path: mm-customizable-feature.png
@@ -29,7 +29,7 @@ intro:
   - excerpt: 'You should follow me! &nbsp; [<i class="fa fa-twitter"></i> @ericstewart](https://twitter.com/ericstewart){: .btn .btn--twitter}'
 ---
 
-{% include feature_row id="intro" type="center" %}
+{% include feature_row id="intro" %}
 
 <!--{% include feature_row %}-->
 
@@ -38,7 +38,7 @@ intro:
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts }}</h3>
 
 {% for post in paginator.posts %}
-  {% include archive-single.html %}
+{% include archive-single.html %}
 {% endfor %}
 
 {% include paginator.html %}
