@@ -11,8 +11,9 @@ title                    : "Eric Stewart"
 title_separator          : "-"
 name                     : "Eric Stewart"
 description              : "Developer. Software Craftsman. Ponderer."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+#url                      : "http://localhost:4000" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://www.eric-stewart.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
@@ -213,7 +214,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "/blog"
+      path: ""
       type: posts
     values:
       layout: single
