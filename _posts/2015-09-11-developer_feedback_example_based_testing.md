@@ -46,7 +46,7 @@ I would have a difficult time finding a Java programmer that isn't somewhat fami
 
 Imagine we have a `Calculator` class designed to evaluate strings with mathematical expressions. To gain confidence in the code, we can think of a specific interaction we need to make and the expected result and then turn this into an executable test. In many languages it would look similar to this Java example using the [JUnit] framework[^junit_example]:
 
-{% highlight ruby linenos %}
+```ruby
 public class CalculatorTest {
 
     @Test
@@ -62,7 +62,7 @@ public class CalculatorTest {
         assertEquals(6, sum);
     }
 }
-{% endhighlight %}
+```
 
 This test has a context using a `Calculator` object with no explicit configuration or prior usage. As described in the name it is focused on the example of triple-operand addition, so the test uses the `calculator` object this way by passing a string to evaluate. Finally, it asserts that result is correct and that the `calculator` correctly determined the operators and operands in this string and calculated the correct result. 
 
