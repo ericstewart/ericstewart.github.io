@@ -44,3 +44,10 @@ excerpt: "Resources related to software development that I recommend"
 
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 * [Spacemacs](http://spacemacs.org)
+
+### Regular Practice
+
+To keep skills sharp, regular practice and feedback is essential. Here are some tools that help.
+
+* [Exercism.io](http://exercism.io) - Coding exercises with feedback from peers
+* [Codewars](https://www.codewars.com) - Web-based code challenges and katas
