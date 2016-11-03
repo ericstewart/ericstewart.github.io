@@ -7,9 +7,10 @@ excerpt: "Resources related to software development that I recommend"
 
 ***Disclosure:*** *Please note that some of the links that follow may affiliate links and at no additional cost to you I will earn a commission if you decide to make a purchase. I recommend these because they are helpful and useful not because of the small commissions I make if you decide to purchase something. Please do not spend money on any of these products unless you feel that that they will benefit you and help you achieve your goals.*
 
-## Newsletters
+## Reading
 
-* [Fives](http://us5.campaign-archive2.com/home/?u=076badfc558e06ebb62a22574&id=18cf55a1dc) - Newsletter featuring five new cutting-edge research and technology ideas
+* [Developers Should Read These](/developer_reading/)
+
 
 ## Applications
 
