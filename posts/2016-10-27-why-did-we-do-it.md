@@ -1,17 +1,7 @@
 title: Why did we do it that way?
 url: /blog/why-did-we-do-it/
 date: 2016-10-27
-description: Why did we do it this way?
-image: img/question-mark-1872665_1920.jpg
-thumbnail: /img/question-mark-1872665_640.jpg
-classes:
-- feature-figcaption
-- feature-figcaption-hidden
-- feature-figlink
-- feature-fignum
-- feature-tablecaption
-tags: blog
-
+tags: design
 
 Have you ever joined a project and ***not*** soon questioned why things are the way they are? Why was *this* language (or framework) chosen over another? Why do we (or don't we) organize things into microservices? Why are errors handled the way they are? What drove the choice of database, or API design, or external service? 
 

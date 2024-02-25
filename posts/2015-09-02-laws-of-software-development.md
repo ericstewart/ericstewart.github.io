@@ -1,21 +1,15 @@
 title: The Laws of Software Development
 description: What laws, theory's, conjectures describe the fundamental nature of software development?
 date: 2015-09-02
-image: /img/Laws.jpg
 tags: programming,theory,project-management,agile
-classes:
-- feature-figcaption
-- feature-figcaption-hidden
-- feature-figlink
-- feature-fignum
-- feature-tablecaption
-- feature-math
 
 I don't *exactly* remember the first time I encountered a *Law*. No, not one of the type intended to govern societal behavior. I'm referring to *Laws* like those that relate to something like physics, mathematics, nature, social sciences, etc. It was probably in a class or in a textbook in my youth and most likely was the ["law of gravity"](https://en.wikipedia.org/wiki/Gravity) or joking references to [Murphy's Law](https://en.wikipedia.org/wiki/Murphy%27s_law).  Wikipedia defines this type of Law as:
 
 > a universal principle that describes the fundamental nature of something, the universal properties and the relationships between things, or a description that purports to explain these principles and relationships.[^law]
 
 One of the core problems in software development, I believe, is remembering and applying the lessons of the past. With the pace of change, experimentation, career path trends, and background diversity of new developers we are challenged to keep up with the knowledge and wisdom that has come before us. Many formal mentoring/apprenticeship programs are highly focused on practical, hands-on application. How do we leverage the wisdom of those who have come before us?
+
+<!-- end-of-preview -->
 
 We encounter principles all the time in books, talks, classes, web sites, etc. I have used them in training, printed works, and to help guide me on how to approach certain problems. They sound authoritative, and with good reason: they have stood the test of time (in most cases). In some cases there has been testing and verification, while others are assumed. Whether they are truly *conjecture*, *hypothesis*, *theory*, or *law* is sometimes debateable, still they are principles that are held highly. 
 
@@ -118,8 +112,6 @@ One of the most common quotes, although all too often heard **after** having mor
 ### The Cone of Uncertainty
 
 This project management principle describes how uncertainty changes over time[^coneuncertainty]. It describes that uncertainty tends to decrease over the course of a project, narrowed by reductions in variability. Variability is typically reduced through research and decisions that remove uncertainty. 
-
-![Cone of Uncertainty](/img/640px-Cone_of_Uncertainty.jpg)
 
 The *Cone of Uncertainty* can be found in applications like:
 

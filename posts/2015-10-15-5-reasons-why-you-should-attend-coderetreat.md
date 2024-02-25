@@ -4,17 +4,15 @@ url: 5-reasons-why-you-should-attend-coderetreat
 date: 2015-10-15
 tags: craftsmanship,software,coderetreat,deliberate practice
 
-![Coderetreat](/img/coderetreat_logo.png)
+As I write this it's that time of year where I'm preparing for [Global Day of Coderetreat](http://globalday.coderetreat.org)! If you write code--even if you are just starting out--*you should consider taking part if on of these events*. If you can't attend a global event near you this year, look for one of the many that happen throughout the year. Chances are, no matter when you are reading this there is a Coderetreat event not too far away. Why should you care? Please read on!
 
-As I write this it's that time of year where I'm preparing for [Global Day of Coderetreat]! If you write code--even if you are just starting out--*you should consider taking part if on of these events*. If you can't attend a global event near you this year, look for one of the many that happen throughout the year. Chances are, no matter when you are reading this there is a Coderetreat event not too far away. Why should you care? Please read on!
-
-Maybe you aren't familiar with [Coderetreat]. I encourage you to go read up on it. For those short on time: [Coderetreat] is an event for developers, coders, programmers--whatever you choose to call yourself--where you work with other developers to solve a fun problem with the intent of practicing coding techniques, design, and collaboration. It is designed to be fun but to get you out of your comfort zone in order to encourage new ways of solving problems. This is done by introducing various strategies around design and implementation techniques and constraints that encourage you to approach problems differently than you normally might.
+Maybe you aren't familiar with [Coderetreat](http://coderetreat.org). I encourage you to go read up on it. For those short on time: [Coderetreat](http://coderetreat.org) is an event for developers, coders, programmers--whatever you choose to call yourself--where you work with other developers to solve a fun problem with the intent of practicing coding techniques, design, and collaboration. It is designed to be fun but to get you out of your comfort zone in order to encourage new ways of solving problems. This is done by introducing various strategies around design and implementation techniques and constraints that encourage you to approach problems differently than you normally might.
 
 Ok. Still with me? Maybe you are thinking it sounds good but you are still skeptical about what you'll get out of it. Here are my top reasons that you'll be glad you attended.
 
 ## A Fresh Context 
 
-[Coderetreat] gets you away from the everyday environment where you normally work. This allows you to focus on deliberate learning. While you may certainly learn and practice ways of improving in your normal work, Coderetreat allows you to improve fundamental skills without other constraints that may impede learning.
+[Coderetreat](http://coderetreat.org) gets you away from the everyday environment where you normally work. This allows you to focus on deliberate learning. While you may certainly learn and practice ways of improving in your normal work, Coderetreat allows you to improve fundamental skills without other constraints that may impede learning.
 
 ## Slow Down
 
@@ -37,7 +35,4 @@ And for those interested in learning a new language, this is a great chance to l
 ## Just Go!!!
 
 Hopefully something here is encouragement enough to try a Coderetreat. They are typically free to attend with food covered by sponsors. It is a great learning experience, fun, and you can can attend them over and over and learn something new every time.
-
-[Global Day of Coderetreat]: http://globalday.coderetreat.org
-[Coderetreat]: http://coderetreat.org
 

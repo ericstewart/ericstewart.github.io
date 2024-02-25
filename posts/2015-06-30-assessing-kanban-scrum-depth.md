@@ -3,16 +3,14 @@ description: "How can you (as a team member or team as a whole) get feedback abo
 url: /blog/assessing-kanban-scrum-depth/
 date: 2015-06-30
 tags: assessment,feedback,kanban,scrum,agile
-thumbnail: /img/assessment_q.jpg
-image: img/assessment_o_cropped.jpg
-credit: https://www.flickr.com/photos/albertogp123/
-classes:
-- feature-figcaption
-- feature-figcaption-hidden
-- feature-figlink
-- feature-tablecaption
+
+
+![Exam by Alberto G. on Flickr, cropped, CC BY 2.0 DEED Attribution 2.0 Generic](/assets/images/assessment_o_cropped.jpg center)
+_[Exam by Alberto G. on Flickr, cropped, CC BY 2.0 DEED Attribution 2.0 Generic](https://www.flickr.com/photos/albertogp123/5843577306/)_
 
 One of the great challenges of adopting an *Agile* methodology, Kanban, or similar approach, whether for development software or other type of work, is evaluating how you are doing and what to improve. Also challenging is understanding how well you are improving (or not) over time.
+
+<!-- end-of-preview -->
 
 Beyond built-in ceremonies used to solicit improvement feedback, there are some evolving methods of self assessment that may be useful to generate feedback on the depth of your implementation. Through such an assessment, you or your team will likely find a different view of your implementation that will inspire change.
 
@@ -36,8 +34,8 @@ A number of people have been looking at a variation of assessment that focuses o
 
 Borrowing from the often used *iceberg* metaphor, many adoptions focus primarily on some surface practices while glossing over or ignoring aspects of the approach that provide depth and are not easily seen. A depth assessment tries to highlight what areas are  possibly too shallow and may benefit from developing greater depth of implementation.
 
-![Iceberg by here](/img/iceberg.jpg)
-_[Iceberg by here](https://www.flickr.com/photos/pere/523019984)_
+![Iceberg by pere on Flickr, cropped, CC BY-NC-SA 2.0 DEED Attribution-NonCommercial-ShareAlike 2.0 Generic](/assets/images/iceberg.jpg)
+_[Iceberg by pere on Flickr, cropped, CC BY-NC-SA 2.0 DEED Attribution-NonCommercial-ShareAlike 2.0 Generic](https://www.flickr.com/photos/pere/523019984)_
 
 The first of these that I encountered was a [Depth of a Kanban tool](http://leanagileprojects.blogspot.com/2013/03/depth-of-kanban-good-coaching-tool.html) described by Christophe Achouiantz and based on work by David J. Anderson, Håkan Fors, and others. I found that this approach requires more coach guidance as a team without deep understanding of practices and outcomes may have trouble assessing themselves in some areas. The descriptions linked to here even describe it as more of a coaching tool. The result is a ranking of depth in each of the core practice areas of Kanban (and a desired effects dimension as well) giving a coach and team areas in which to focus.
 

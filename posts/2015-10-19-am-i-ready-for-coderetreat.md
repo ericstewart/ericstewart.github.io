@@ -2,11 +2,8 @@ title: Am I Ready to Attend a Coderetreat?
 description: Questions you should ask and actions you can take to prepare for participating in a Coderetreat
 date: 2015-10-19
 tags: craftsmanship,software,coderetreat,deliberate practice
-thumbnail: /img/global-day-cr.png
 
-![Coderetreat](/img/coderetreat_logo.png)
-
-So you heard about [Coderetreat] and have the opportunity to attend one. Or maybe you read [5 Reasons Why You Should Attend a Coderetreat]({{ site.url}}/blog/5-reasons-why-you-should-attend-coderetreat/), heard about it from a friend or worker, or saw it listed in a community events calendar. In any case, you are intrigued but you have questions or concerns. Are you ready to participate in one?
+So you heard about [Coderetreat] and have the opportunity to attend one. Or maybe you read [5 Reasons Why You Should Attend a Coderetreat]({{ site.url}}/5-reasons-why-you-should-attend-coderetreat/), heard about it from a friend or worker, or saw it listed in a community events calendar. In any case, you are intrigued but you have questions or concerns. Are you ready to participate in one?
 
 ## General Preparation
 
@@ -34,22 +31,23 @@ First of all, I would recommend that all attendees (whether you have never atten
 
 Here are some typical questions and tips to help you prepare for a [Coderetreat].
 
-1. I'm a beginning programmer. Can I really participate?
+### I'm a beginning programmer. Can I really participate?
 
-    In most cases, yes. However, if you have no prior experience and have not written more than a "Hello World" program in *any* language you *might* have trouble keeping up. [Coderetreat] is probably not the best place to learn the basic fundamentals of programming, but you don't need to be an expert (or even intermediate). We try to help those with less experience pair up with those who have more as best we can.
+In most cases, yes. However, if you have no prior experience and have not written more than a "Hello World" program in *any* language you *might* have trouble keeping up. [Coderetreat] is probably not the best place to learn the basic fundamentals of programming, but you don't need to be an expert (or even intermediate). We try to help those with less experience pair up with those who have more as best we can.
 
-    In this situation, here are some suggestions:
+In this situation, here are some suggestions:
 
-    * Try to work through a beginner book in your language of choice as far as you can.
-    * Work through some online Code [Kata]. Some sites make these easy to work on and get feedback, such as [CodeWars] and [cyber-dojo]
-    * Consider coming and just observing at the beginning. You will learn a lot and probably find out that you know more than you think!
+* Try to work through a beginner book in your language of choice as far as you can.
+* Work through some online Code [Kata]. Some sites make these easy to work on and get feedback, such as [CodeWars](https://www.codewars.com) and [cyber-dojo](https://cyber-dojo.org/creator/home)
+* Consider coming and just observing at the beginning. You will learn a lot and probably find out that you know more than you think!
 
-2. I haven't used automated tests, Test-driven Development, or Pair Programming before. Will I be lost?
-    It is common for many participants to not have experience with some or all of these. That is one of the great things to learn and practice during the event. However, trying or practicing it out on your own before certainly helps! Here are some suggestions for practicing:
+### I haven't used automated tests, Test-driven Development, or Pair Programming before. Will I be lost?
 
-    Try working through code [Kata] and focusing on using tests and following Test-driven development. There are some great Katas listed in places like http://codekata.com/ and sites that make it easy to work on problems applying tests such as [CodeWars] and [cyber-dojo]. I recommend starting with writing tests if you aren't familiar with using them and then try applying TDD after you are comfortable.
+It is common for many participants to not have experience with some or all of these. That is one of the great things to learn and practice during the event. However, trying or practicing it out on your own before certainly helps! Here are some suggestions for practicing:
 
-    Pairing is difficult to practice unless you can find friends or coworkers that are willing. You can, though, mentally prepare for sitting and working with others or try an online community that is oriented around giving feedback to others such as [Exercism.io](http://exercism.io). You can also practice reading over public code on [Github](http://www.github.com) or other sites and think about how you would ask questions about the code or provide feedback in a constructive way (and in real time). Just find something that interests you in a language you know or are learning. Code reading is a helpful learning activity even on your own!
+Try working through code [Kata] and focusing on using tests and following Test-driven development. There are some great Katas listed in places like http://codekata.com/ and sites that make it easy to work on problems applying tests such as [CodeWars] and [cyber-dojo]. I recommend starting with writing tests if you aren't familiar with using them and then try applying TDD after you are comfortable.
+
+Pairing is difficult to practice unless you can find friends or coworkers that are willing. You can, though, mentally prepare for sitting and working with others or try an online community that is oriented around giving feedback to others such as [Exercism.io](http://exercism.io). You can also practice reading over public code on [Github](http://www.github.com) or other sites and think about how you would ask questions about the code or provide feedback in a constructive way (and in real time). Just find something that interests you in a language you know or are learning. Code reading is a helpful learning activity even on your own!
 
 ## Don't Worry Too Much or Overprepare
 

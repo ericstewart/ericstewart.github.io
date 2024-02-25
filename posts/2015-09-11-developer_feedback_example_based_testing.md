@@ -1,19 +1,9 @@
-title: "Developer Feedback Mechanisms: Example-Based Testing"
-url: /blog/developer-feedback-example-based-testing/
+title: Developer Feedback Mechanisms: Example-Based Testing
 description: "Software Developers need good feedback mechanisms. The example-based test is one of the most frequently leveraged."
 excerpt: "Software Developers need good feedback mechanisms. The example-based test is one of the most frequently leveraged."
 date: 2015-09-11
 modified: 2015-09-29
-image: /img/developer_feedback_ebt_banner.jpg
-thumbnail: /img/developer_feedback_ebt_banner.jpg
 tags: feedback,testing
-classes:
-- feature-figcaption
-- feature-figcaption-hidden
-- feature-figlink
-- feature-fignum
-- feature-tablecaption
-- feature-highlight
 
 I like the term ***feedback***. As Wikipedia describes it:
 
@@ -21,16 +11,15 @@ I like the term ***feedback***. As Wikipedia describes it:
 
 As software developers, we should always consider the value we get out of the many activities we use to deliver software. All too often someone champions the latest tool or practice because it is new, interesting, or just *seems right*. Or perhaps it is because everyone -- or the just the right people -- seem to be doing it (you may have heard this referred to as [cargo culting](https://en.wikipedia.org/wiki/Cargo_cult_programming)). And so we try out whatever it is, maybe getting value, maybe not.
 
+<!-- end-of-preview -->
+
 I certainly advocate experimenting with something in the hopes of improvement. But along with this goes some guess of what this new tool or technique will provide that we can validate. For me, *Feedback* is at the top of the list. I like to think of when, and how we get feedback and how it will be used to make things better.
 
 I especially like the definition of 'feedback' above because it encourages a [*"systems thinking"*](https://en.wikipedia.org/wiki/Systems_thinking) view.  Just as employees can benefit from peer feedback and companies benefit from customer feedback, we software developers can benefit from our own feedback mechanisms. Feedback can come in many forms about different aspects of the product: Design, behavior, performance, maintainability, etc. We are part of a complex system where just part of it is a person at a computer making code changes using an editor or IDE.
 
 
-![Simple Feedback 02 by Trevithj](/img/Simple_Feedback_02.png)
-_CC BY-SA 3.0 via Commons_
-
-https://commons.wikimedia.org/wiki/File:Simple_Feedback_02.png#/media/File:Simple_Feedback_02.png_
-
+![Simple Feedback 02 by Trevithj, CC BY-SA 3.0 DEED Attribution-ShareAlike 3.0 Unported](/assets/images/Simple_Feedback_02.png)
+_[Simple Feedback 02 by Trevithj, CC BY-SA 3.0 DEED Attribution-ShareAlike 3.0 Unported](https://commons.wikimedia.org/wiki/File:Simple_Feedback_02.png#/media/File:Simple_Feedback_02.png)_
 
 In this, the first of a series on developer feedback mechanisms, I start with one of the most commonly encountered developer practices that provide a feedback loop: Example-based Testing. 
 
