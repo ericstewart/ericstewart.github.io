@@ -1,10 +1,14 @@
-{:deps {io.github.borkdude/quickblog
+{:deps {
+        org.babashka/http-server {:mvn/version "0.1.12"}
+        io.github.borkdude/quickblog
           #_"You use the newest SHA here:"
-          {:git/sha "d00e14b1176416b7d7b88e6608b6975888208355"},
+        {:git/sha "aab20855db9a5281728b71147a083bcdd261799a"},
         #_{:mvn/version "0.3.6"}},
  :tasks {:init (def opts
                  {:blog-title "Eric Stewart",
-                  :blog-description "Ponderings of Eric Stewart"}),
+                  :blog-description "Ponderings on Software, etc."
+                  :page-suffix ""
+                  :twitter-handle "ericstewart"}),
          :requires ([quickblog.cli :as cli]),
          quickblog
            {:doc "Start blogging quickly! Run `bb quickblog help` for details.",
