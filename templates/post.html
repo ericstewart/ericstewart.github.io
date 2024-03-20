@@ -1,26 +1,40 @@
-<h1>
-  {% if post-link %}
-  <a href="{{post-link}}">
-  {% endif %}
-  {{title}}
-  {% if post-link %}
-  </a>
-  {% endif %}
+<article class="prose">
+    <h1>
+    {% if post-link %}
+    <a href="{{post-link}}">
+        {% endif %}
+        {{title}}
+        {% if post-link %}
+    </a>
+    {% endif %}
 </h1>
-{{body | safe}}
+    {{body | safe}}
+</article>
+
 {% if discuss-link %}
 <p>Discuss this post <a href="{{discuss}}">here</a>.</p>
 {% endif %}
+<br/>
 <p><i>Published: {{date}}</i></p>
 {% if tags %}
 <p>
-  <i>
-  Tagged:
-  {% for tag in tags %}
-  <span class="tag">
-    <a href="tags/{{tag|escape-tag}}{{page-suffix}}">{{tag}}</a>
-  </span>
-  {% endfor %}
-  </i>
+    <i>
+        Tags:
+        {% for tag in tags %}
+        <span class="tag badge badge-outline">
+            <a href="tags/{{tag|escape-tag}}{{page-suffix}}">{{tag}}</a>
+        </span>
+        {% endfor %}
+    </i>
 </p>
+{% endif %}
+{% if any prev next %}
+<div class="post-prev-next">
+    {% if prev %}
+    <div>⏪ <a href="{{prev.file|replace:.md:.html}}">{{prev.title}}</a></div>
+    {% endif %}
+    {% if next %}
+    <div><a href="{{next.file|replace:.md:.html}}">{{next.title}}</a> ⏩</div>
+    {% endif %}
+</div>
 {% endif %}
