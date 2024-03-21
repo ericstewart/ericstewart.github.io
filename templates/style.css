@@ -1924,14 +1924,13 @@ html {
   grid-row-start: 2;
 }
 
-.timeline-end {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  margin: 0.25rem;
-  align-self: flex-start;
-  justify-self: center;
+.badge-neutral {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
 }
 
 .badge-outline {
@@ -2457,15 +2456,6 @@ html {
   justify-self: center;
 }
 
-.timeline-horizontal .timeline-end {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  align-self: flex-start;
-  justify-self: center;
-}
-
 :where(.timeline-snap-icon) > li,
 .timeline-horizontal:where(.timeline-snap-icon) > li {
   --timeline-col-start: 0.5rem;
@@ -2606,10 +2596,6 @@ html {
   max-width: 50rem;
 }
 
-.max-w-\[60rem\] {
-  max-width: 60rem;
-}
-
 .columns-1 {
   -moz-columns: 1;
        columns: 1;
@@ -2654,6 +2640,10 @@ html {
   padding-right: 2rem;
 }
 
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -2666,6 +2656,10 @@ html {
 
 .font-bold {
   font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .underline {
