@@ -8,7 +8,6 @@
                  {:blog-title "Eric Stewart",
                   :blog-description "Ponderings on Software, etc."
                   :page-suffix ""
-                  :twitter-handle "ericstewart"
                   :link-prev-next-posts true}),
          :requires ([quickblog.cli :as cli]),
          quickblog
