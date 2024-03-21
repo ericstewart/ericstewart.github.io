@@ -2,7 +2,7 @@
     <h1>{{title}}</h1>
     <ul class="index">
         {% for tag in tags %}
-            <li><span class="tag badge badge-outline"><a href="{{tag.url}}">{{tag.tag}}</a> - {{tag.count}} post{{tag.count|pluralize}}</span></li>
+        <li><span class="tag badge badge-outline"><a href="{{tag.url}}">{{tag.tag}}</a></span> - {{tag.count}} post{{tag.count|pluralize}}</li>
         {% endfor %}
     </ul>
 </div>
