@@ -2,7 +2,7 @@
         org.babashka/http-server {:mvn/version "0.1.12"}
         io.github.borkdude/quickblog
           #_"You use the newest SHA here:"
-        {:git/sha "aab20855db9a5281728b71147a083bcdd261799a"},
+        {:git/sha "caffe692c8d715b30c8851ab8210dbabb19a1785"},
         #_{:mvn/version "0.3.6"}},
  :tasks {:init (def opts
                  {:blog-title "Eric Stewart",
