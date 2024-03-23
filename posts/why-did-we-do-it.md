@@ -3,7 +3,7 @@ url: /blog/why-did-we-do-it/
 date: 2016-10-27
 tags: design
 
-Have you ever joined a project and ***not*** soon questioned why things are the way they are? Why was *this* language (or framework) chosen over another? Why do we (or don't we) organize things into microservices? Why are errors handled the way they are? What drove the choice of database, or API design, or external service? 
+Have you ever joined a project and ***not*** soon after questioned why things are the way they are? Why was *this* language (or framework) chosen over another? Why do we (or don't we) organize things into microservices? Why are errors handled the way they are? What drove the choice of database, or API design, or external service? 
 
 These questions always come up. It's a natural part of understanding a new work environment. It happens every time. And I don't like being in the position of saying "I'm not sure why this was done/used" in the course of fixing something or implementing something new.
 
