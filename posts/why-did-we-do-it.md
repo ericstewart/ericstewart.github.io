@@ -1,5 +1,4 @@
 title: Why did we do it that way?
-url: /blog/why-did-we-do-it/
 date: 2016-10-27
 tags: design
 
@@ -23,7 +22,7 @@ As described, ADRs seem to have just enough information: **Context** of the deci
 
 In my experience, they are probably just as valuable in making a decision as in documenting for the future. The process of describing the Context helps in framing the decision and writing a the Consequences for a proposal help communicate information not only for approval but for generating additional work items or changes that may result.
 
-A very public example of these that I have seen recently is in the [Arachne Framework](http://arachne-framework.org), a web development framework for [Clojure](http://clojure.org). The project has a dedicated [repository of ADRs](https://github.com/arachne-framework/architecture) since the project itself is composed of multiple repositories. Some of the records already present include:
+A very public example of these that I have seen recently is in the Arachne Framework, a web development framework for [Clojure](http://clojure.org). The project has a dedicated [repository of ADRs](https://github.com/arachne-framework/architecture) since the project itself is composed of multiple repositories. Some of the records already present include:
 
 * [The use of ADRs (how meta!)](https://github.com/arachne-framework/architecture/blob/master/adr-001-use-adrs.md)
 * [How configuration is exposed to users](https://github.com/arachne-framework/architecture/blob/master/adr-005-user-facing-config.md)
