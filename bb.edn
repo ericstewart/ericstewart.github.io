@@ -1,9 +1,6 @@
-{:deps {
-        org.babashka/http-server {:mvn/version "0.1.12"}
-        io.github.borkdude/quickblog
-          #_"You use the newest SHA here:"
-        {:git/sha "caffe692c8d715b30c8851ab8210dbabb19a1785"},
-        #_{:mvn/version "0.3.6"}},
+{:deps {org.babashka/http-server {:mvn/version "0.1.12"}
+        org.babashka/cli {:mvn/version "0.8.58"}
+        io.github.borkdude/quickblog {:git/sha "caffe692c8d715b30c8851ab8210dbabb19a1785"}}
  :tasks {:init (def opts
                  {:blog-title "Eric Stewart",
                   :blog-description "Ponderings on Software, etc."
