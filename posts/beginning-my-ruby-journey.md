@@ -2,7 +2,7 @@ Title: The Beginning of my Ruby Journey
 Date: 2024-04-07
 Image: assets/images/photos/irc2003-front-preview.jpeg
 Image-Alt: Front Logo of T-Shirt from RubyConf 2003
-Tags: memory-lane
+Tags: memory-lane,ruby
 
 The [Ruby](https://www.ruby-lang.org) programming language has been a great part of my software development toolkit over the years.  A recent find triggered a reflection on how it all began for me.
 
