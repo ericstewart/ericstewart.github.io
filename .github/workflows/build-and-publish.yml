@@ -12,6 +12,7 @@ jobs:
         with:
           bb: latest
       - run: bb quickblog render
+      - run: npx @tailwindcss/cli -i templates/input.css -o public/style.css
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public/
