@@ -1,13 +1,12 @@
-{:deps {org.babashka/http-server {:mvn/version "0.1.12"}
-        org.babashka/cli {:mvn/version "0.8.58"}
-        io.github.borkdude/quickblog {:git/sha "709bccad08e3911ed7af912976684435ce2c1c6a"}}
- :tasks {:init (def opts
-                 {:blog-title "Eric Stewart",
+{:deps {org.babashka/http-server {:mvn/version "0.1.14"}
+        org.babashka/cli {:mvn/version "0.8.67"}
+        io.github.borkdude/quickblog {:git/sha "c542bddada994ab86824bb26d60abdd76ccaa4de"}}
+ :tasks {:init (def base-opts
+                 {:blog-title "Eric Stewart"
                   :blog-description "Ponderings on Software, etc."
                   :blog-root "https://www.eric-stewart.com"
                   :page-suffix ""
-                  :link-prev-next-posts true}),
-         :requires ([quickblog.cli :as cli]),
-         quickblog
-           {:doc "Start blogging quickly! Run `bb quickblog help` for details.",
-            :task (cli/dispatch opts)}}}
+                  :link-prev-next-posts true})
+         :requires ([quickblog.cli :as cli])
+         quickblog {:doc "Start blogging quickly!"
+                    :task (cli/dispatch base-opts)}}}

@@ -1,3 +1,7 @@
 .clj-kondo/
 .lsp/.cache/
 .portal/
+node_modules/
+.work/
+.nrepl-port
+public/

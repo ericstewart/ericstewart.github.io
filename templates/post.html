@@ -1,40 +1,73 @@
-<article class="prose">
-    <h1>
-    {% if post-link %}
-    <a href="{{post-link}}">
-        {% endif %}
-        {{title}}
-        {% if post-link %}
-    </a>
-    {% endif %}
-</h1>
+<article class="prose prose-lg max-w-none">
+    <header class="mb-8 pb-6 border-b border-base-200">
+        <h1 class="mb-4">{{title}}</h1>
+        <div class="flex flex-wrap items-center gap-4 text-sm opacity-70">
+            <time class="font-mono">{{date}}</time>
+            {% if tags %}
+            <div class="flex flex-wrap gap-2">
+                {% for tag in tags %}
+                <a href="tags/{{tag|escape-tag}}{{page-suffix}}" class="badge badge-outline badge-sm hover:badge-primary transition-colors">
+                    {{tag}}
+                </a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </header>
+
     {{body | safe}}
 </article>
 
 {% if discuss-link %}
-<p>Discuss this post <a href="{{discuss}}">here</a>.</p>
-{% endif %}
-<br/>
-<p><i>Published: {{date}}</i></p>
-{% if tags %}
-<p>
-    <i>
-        Tags:
-        {% for tag in tags %}
-        <span class="tag badge badge-outline">
-            <a href="tags/{{tag|escape-tag}}{{page-suffix}}">{{tag}}</a>
-        </span>
-        {% endfor %}
-    </i>
-</p>
-{% endif %}
-{% if any prev next %}
-<div class="post-prev-next">
-    {% if prev %}
-    <div>⏪ <a href="{{prev.file|replace:.md:.html}}">{{prev.title}}</a></div>
-    {% endif %}
-    {% if next %}
-    <div><a href="{{next.file|replace:.md:.html}}">{{next.title}}</a> ⏩</div>
-    {% endif %}
+<div class="mt-8 p-4 bg-base-200 rounded-lg">
+    <p>
+        <strong>Discussion:</strong> 
+        <a href="{{discuss-link}}" class="link">Join the conversation on this post</a>
+    </p>
 </div>
 {% endif %}
+
+{% if any prev next %}
+<nav class="mt-12 pt-8 border-t border-base-200">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {% if prev %}
+        <a href="{{prev.file|replace:.md:.html}}" class="prev-next-card card bg-base-100 border border-base-200 p-4 hover:border-primary transition-colors group">
+            <div class="text-sm opacity-60 mb-1 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Previous
+            </div>
+            <div class="font-semibold group-hover:text-primary transition-colors">{{prev.title}}</div>
+        </a>
+        {% endif %}
+        
+        {% if next %}
+        <a href="{{next.file|replace:.md:.html}}" class="prev-next-card card bg-base-100 border border-base-200 p-4 hover:border-primary transition-colors group text-right md:text-left">
+            <div class="text-sm opacity-60 mb-1 flex items-center gap-2 md:justify-end">
+                Next
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </div>
+            <div class="font-semibold group-hover:text-primary transition-colors">{{next.title}}</div>
+        </a>
+        {% endif %}
+    </div>
+</nav>
+{% endif %}
+
+<div class="flex flex-wrap gap-4 mt-8">
+    <a href="index.html" class="btn btn-ghost btn-sm gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to blog
+    </a>
+    <a href="#" class="btn btn-ghost btn-sm gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+        Back to top
+    </a>
+</div>
