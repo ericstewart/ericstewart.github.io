@@ -11,6 +11,7 @@ jobs:
       - uses: delaguardo/setup-clojure@12.1
         with:
           bb: latest
+      - run: npm install
       - run: bb quickblog render
       - run: npx @tailwindcss/cli -i templates/input.css -o public/style.css
       - uses: actions/upload-pages-artifact@v3
