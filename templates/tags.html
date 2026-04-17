@@ -1,29 +1,18 @@
-<section class="mb-8">
-    <h1 class="text-3xl font-bold mb-2">{{title}}</h1>
-    <p class="opacity-70">Browse posts by topic</p>
+<section class="page-intro reveal">
+    <p class="section-kicker">Topics</p>
+    <h1 class="section-title">{{title}}</h1>
+    <p class="page-intro-copy">Browse posts by subject without the card-heavy catalog feel.</p>
 </section>
 
-<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<section class="tag-directory reveal">
     {% for tag in tags %}
-    <a href="{{tag.url}}" class="card bg-base-100 border border-base-200 hover:border-primary hover:shadow-lg transition-all duration-200 group">
-        <div class="card-body p-5">
-            <div class="flex items-center justify-between">
-                <h3 class="card-title text-lg group-hover:text-primary transition-colors">{{tag.tag}}</h3>
-                <div class="badge badge-primary">{{tag.count}} post{{tag.count|pluralize}}</div>
-            </div>
-            <p class="text-sm opacity-60 mt-2">
-                View all {{tag.count}} post{{tag.count|pluralize}} tagged with "{{tag.tag}}"
-            </p>
-        </div>
+    <a href="{{tag.url}}" class="tag-directory-item">
+        <span class="tag-directory-name">{{tag.tag}}</span>
+        <span class="tag-directory-count">{{tag.count}} post{{tag.count|pluralize}}</span>
     </a>
     {% endfor %}
 </section>
 
-<div class="mt-8">
-    <a href="#" class="btn btn-ghost btn-sm gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-        </svg>
-        Back to top
-    </a>
+<div class="section-closing reveal">
+    <a href="#" class="text-link muted-link">Back to top</a>
 </div>

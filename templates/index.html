@@ -1,64 +1,57 @@
-<section class="mb-12 pb-8 border-b border-base-200">
-    <div class="flex items-center gap-6 mb-4">
-        <div class="avatar w-20 h-20 rounded-full avatar-placeholder text-2xl font-bold">
-            ES
-        </div>
+<section class="hero-panel reveal">
+    <p class="hero-kicker">Software, product, and thoughtful technical writing</p>
+    <div class="hero-grid">
         <div>
-            <h1 class="text-4xl font-bold tracking-tight mb-1">Eric Stewart</h1>
-            <p class="text-lg opacity-70">{{blog-description}}</p>
+            <h1 class="hero-title">Essays and notes on building software well.</h1>
+            <p class="hero-copy">
+                I write about software development, design, delivery, feedback, and the practical
+                choices that shape good teams and systems over time.
+            </p>
+        </div>
+        <div class="hero-aside">
+            <div class="hero-aside-label">Browse</div>
+            <a href="archive{{page-suffix}}" class="hero-aside-link">Full archive</a>
+            <a href="tags/index.html" class="hero-aside-link">Topics and tags</a>
+            <a href="about.html" class="hero-aside-link">About this site</a>
         </div>
     </div>
-    <p class="text-base leading-relaxed opacity-80 max-w-2xl">
-        Welcome to my blog. I'm a technologist who writes about software, technology, and product
-        development. 
-    </p>
 </section>
 
 <section class="space-y-6">
-    <h2 class="text-2xl font-semibold mb-6">Latest Posts</h2>
-    
+    <div class="section-heading reveal">
+        <p class="section-kicker">Recent writing</p>
+        <h2 class="section-title">Latest posts</h2>
+    </div>
+
     {% for post in posts %}
-    <article class="post-card bg-base-100 rounded-lg border border-base-200 p-6 opacity-0 animate-fade-in">
-        <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
-            <h3 class="post-card-title text-xl font-semibold">
-                <a href="{{post.post-link}}" class="link link-hover">{{post.title}}</a>
-            </h3>
-            <time class="text-sm opacity-60 whitespace-nowrap font-mono">{{post.date}}</time>
-        </div>
-        
-        <div class="prose prose-sm max-w-none mb-4">
-            {{post.body | safe}}
-        </div>
-        
-        <div class="flex flex-wrap items-center justify-between gap-4">
+    <article class="post-tease reveal">
+        <div class="post-tease-meta">
+            <time>{{post.date}}</time>
             {% if post.tags %}
-            <div class="flex flex-wrap gap-2">
+            <div class="post-tag-row">
                 {% for tag in post.tags %}
-                <a href="tags/{{tag|escape-tag}}{{page-suffix}}" class="badge badge-outline badge-sm hover:badge-primary transition-colors">
-                    {{tag}}
-                </a>
+                <a href="tags/{{tag|escape-tag}}{{page-suffix}}" class="tag-link">{{tag}}</a>
                 {% endfor %}
             </div>
             {% endif %}
-            
+        </div>
+
+        <div class="post-tease-body">
+            <h3 class="post-tease-title">
+                <a href="{{post.post-link}}">{{post.title}}</a>
+            </h3>
+            <div class="post-tease-excerpt prose prose-sm max-w-none">
+                {{post.body | safe}}
+            </div>
+
             {% if post.truncated %}
-            <a href="{{post.post-link}}" class="btn btn-ghost btn-sm gap-2">
-                Continue reading
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </a>
+            <a href="{{post.post-link}}" class="text-link">Continue reading</a>
             {% endif %}
         </div>
     </article>
     {% endfor %}
 </section>
 
-<nav class="flex justify-center mt-12 pt-8 border-t border-base-200">
-    <a href="archive" class="btn btn-ghost gap-2">
-        View all posts
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-    </a>
+<nav class="section-closing reveal">
+    <a href="archive{{page-suffix}}" class="text-link">Browse the archive</a>
 </nav>
