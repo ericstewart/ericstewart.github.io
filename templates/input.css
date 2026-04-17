@@ -239,6 +239,15 @@ a {
   box-shadow: var(--shadow);
 }
 
+.theme-toggle-menu {
+  justify-content: center;
+  width: 100%;
+}
+
+.site-menu-panel a {
+  padding: 0.15rem 0;
+}
+
 .site-main {
   padding: 3.5rem 0 4.5rem;
 }
@@ -737,19 +746,170 @@ a {
   }
 
   .site-frame {
-    width: min(100vw - 1.2rem, 1080px);
+    width: min(100vw - 2rem, 1080px);
   }
 
   .site-nav {
-    align-items: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.8rem 0;
+  }
+
+  .site-nav-actions {
+    gap: 0.6rem;
+  }
+
+  .site-brand {
+    gap: 0.7rem;
+  }
+
+  .site-brand-mark {
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 1rem;
+  }
+
+  .site-brand-title {
+    font-size: 1.15rem;
   }
 
   .theme-toggle-label {
     display: none;
   }
 
+  .site-menu summary,
+  .theme-toggle {
+    min-height: 2.35rem;
+    padding: 0.45rem 0.75rem;
+  }
+
+  .site-main {
+    padding: 1.6rem 0 3.2rem;
+  }
+
+  .site-content {
+    gap: 2.8rem;
+  }
+
+  .post-layout,
+  .post-actions,
+  .section-closing {
+    padding-inline: 0.1rem;
+  }
+
+  .hero-panel {
+    padding: 1.3rem 1.15rem;
+    border-radius: 1.2rem;
+  }
+
+  .hero-grid {
+    gap: 1.2rem;
+  }
+
+  .hero-title {
+    margin-top: 0.55rem;
+    font-size: clamp(2.15rem, 10vw, 3rem);
+    line-height: 1;
+  }
+
+  .hero-copy,
+  .page-intro-copy {
+    margin-top: 0.85rem;
+    font-size: 1rem;
+  }
+
+  .hero-aside {
+    gap: 0.35rem;
+    padding-top: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .post-tease {
+    gap: 0.8rem;
+    padding: 1.05rem 0 1.25rem;
+  }
+
+  .post-tease-title {
+    font-size: 1.7rem;
+    line-height: 1.06;
+  }
+
+  .post-tease-excerpt {
+    margin-top: 0.65rem;
+  }
+
+  .post-title {
+    font-size: clamp(2.2rem, 10vw, 3.15rem);
+    line-height: 1.02;
+  }
+
+  .post-header {
+    padding-bottom: 1.15rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .post-header-meta,
+  .post-tease-meta {
+    gap: 0.55rem 0.8rem;
+  }
+
+  .page-intro,
+  .callout-box,
+  .post-nav,
+  .archive-year,
+  .tag-directory-item {
+    border-radius: 1rem;
+  }
+
+  .page-intro,
+  .callout-box,
+  .post-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .archive-year {
+    padding: 1rem;
+  }
+
+  .archive-entry-title {
+    font-size: 1.2rem;
+  }
+
+  .tag-directory {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .tag-directory-item {
+    padding: 0.95rem 1rem;
+  }
+
+  .tag-directory-name {
+    font-size: 1.2rem;
+  }
+
+  .prose pre {
+    border-radius: 0.85rem;
+    padding: 0.9rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .prose pre code {
+    font-size: 0.86rem;
+  }
+
   .site-footer-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.45rem;
+  }
+
+  .site-footer {
+    padding: 1.1rem 0 2rem;
   }
 }

@@ -83,7 +83,7 @@
               <a href="{{relative-path | safe}}atom.xml">Feed</a>
             </div>
 
-            <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+            <button type="button" class="theme-toggle hidden md:inline-flex" data-theme-toggle aria-label="Toggle dark mode">
               <span class="theme-toggle-icon" aria-hidden="true"></span>
               <span class="theme-toggle-label">Dark mode</span>
             </button>
@@ -91,6 +91,10 @@
             <details class="site-menu md:hidden">
               <summary>Menu</summary>
               <div class="site-menu-panel">
+                <button type="button" class="theme-toggle theme-toggle-menu" data-theme-toggle aria-label="Toggle dark mode">
+                  <span class="theme-toggle-icon" aria-hidden="true"></span>
+                  <span class="theme-toggle-label">Dark mode</span>
+                </button>
                 <a href="{{relative-path | safe}}archive{{page-suffix}}">Archive</a>
                 <a href="{{relative-path | safe}}tags/index.html">Tags</a>
                 <a href="{{relative-path | safe}}about.html">About</a>
@@ -126,20 +130,23 @@
     <script>
       (function() {
         var root = document.documentElement;
-        var button = document.querySelector('[data-theme-toggle]');
-        if (!button) return;
-
-        var label = button.querySelector('.theme-toggle-label');
+        var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-theme-toggle]'));
+        if (!buttons.length) return;
 
         function applyTheme(theme) {
           root.setAttribute('data-theme', theme);
           localStorage.setItem('theme', theme);
-          button.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
-          if (label) label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+          buttons.forEach(function(button) {
+            var label = button.querySelector('.theme-toggle-label');
+            button.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+            if (label) label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+          });
         }
 
-        button.addEventListener('click', function() {
-          applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+        buttons.forEach(function(button) {
+          button.addEventListener('click', function() {
+            applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+          });
         });
 
         applyTheme(root.getAttribute('data-theme') || 'light');
