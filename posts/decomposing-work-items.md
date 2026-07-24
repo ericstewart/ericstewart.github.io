@@ -1,4 +1,5 @@
 title: Decomposing Work Items
+description: Practical guidance on splitting work so items stay valuable, predictable, and easier to finish.
 date: 2019-02-16
 tags: managing work
 

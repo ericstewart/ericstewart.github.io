@@ -5,7 +5,7 @@ date: 2015-06-30
 tags: assessment,feedback,kanban,scrum,agile
 
 
-![Exam by Alberto G. on Flickr, cropped, CC BY 2.0 DEED Attribution 2.0 Generic](/assets/images/assessment_o_cropped.jpg center)
+![Exam by Alberto G. on Flickr, cropped, CC BY 2.0 DEED Attribution 2.0 Generic](/assets/images/assessment_o_cropped.jpg)
 _[Exam by Alberto G. on Flickr, cropped, CC BY 2.0 DEED Attribution 2.0 Generic](https://www.flickr.com/photos/albertogp123/5843577306/)_
 
 One of the great challenges of adopting an *Agile* methodology, Kanban, or similar approach, whether for development software or other type of work, is evaluating how you are doing and what to improve. Also challenging is understanding how well you are improving (or not) over time.

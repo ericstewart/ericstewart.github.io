@@ -1,8 +1,24 @@
-<div style="width: 600px">
-    <h1>{{title}}</h1>
-    <ul class="index">
+<section class="page-intro reveal">
+    <p class="section-kicker">Topic</p>
+    <h1 class="section-title">{{title}}</h1>
+    <p class="page-intro-copy">Posts filed under this topic, newest first.</p>
+</section>
+
+<section class="archive-list reveal">
+    <section class="archive-year">
+        <div class="archive-year-heading" aria-hidden="true">#</div>
+        <div class="archive-year-posts">
         {% for post-link in post-links %}
-            <li><span><a class="link" href="{{post-link.url}}">{{post-link.title}}</a> - {{post-link.date}}</span></li>
+        <article class="archive-entry">
+            <time class="archive-entry-date" datetime="{{post-link.date}}">{{post-link.date}}</time>
+            <a class="archive-entry-title" href="{{post-link.url}}">{{post-link.title}}</a>
+        </article>
         {% endfor %}
-    </ul>
+        </div>
+    </section>
+</section>
+
+<div class="section-closing reveal">
+    <a href="index.html" class="text-link">All topics</a>
+    <a href="#top" class="text-link muted-link">Back to top</a>
 </div>

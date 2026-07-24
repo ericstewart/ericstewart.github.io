@@ -8,7 +8,8 @@
         <h1 class="post-title">{{title}}</h1>
         {% if not preview %}
         <div class="post-header-meta">
-            <time>{{date}}</time>
+            <time datetime="{{date}}">{{date}}</time>
+            <span data-reading-time class="reading-time"></span>
             {% if tags %}
             <div class="post-tag-row">
                 {% for tag in tags %}
@@ -32,17 +33,17 @@
 {% endif %}
 
 {% if any prev next %}
-<nav class="post-nav reveal">
+<nav class="post-nav reveal" aria-label="Post navigation">
     <div class="post-nav-grid">
         {% if prev %}
-        <a href="{{prev.file|replace:.md:.html}}" class="post-nav-link">
+        <a href="{{prev.file|cut:.md}}" class="post-nav-link">
             <span class="post-nav-label">Previous</span>
             <span class="post-nav-title">{{prev.title}}</span>
         </a>
         {% endif %}
 
         {% if next %}
-        <a href="{{next.file|replace:.md:.html}}" class="post-nav-link post-nav-link-next">
+        <a href="{{next.file|cut:.md}}" class="post-nav-link post-nav-link-next">
             <span class="post-nav-label">Next</span>
             <span class="post-nav-title">{{next.title}}</span>
         </a>
@@ -53,5 +54,5 @@
 
 <div class="post-actions reveal">
     <a href="index.html" class="text-link">Back to the homepage</a>
-    <a href="#" class="text-link muted-link">Back to top</a>
+    <a href="#top" class="text-link muted-link">Back to top</a>
 </div>

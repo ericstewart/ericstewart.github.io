@@ -3,7 +3,7 @@ description: As a developer, how can you get feedback when writing for humans si
 date: 2015-06-09
 tags: writing,feedback
 
-![bios (bible), Robotlab, 2007 by Mirko Tobias Schäfer, on Flickr](/assets/images/Bios_robotlab_writing_robot_cropped.jpg center)
+![bios (bible), Robotlab, 2007 by Mirko Tobias Schäfer, on Flickr](/assets/images/Bios_robotlab_writing_robot_cropped.jpg)
 _[bios (bible), Robotlab, 2007 by Mirko Tobias Schäfer (cropped), CC BY 2.0 DEED
 Attribution 2.0 Generic](https://www.flickr.com/photos/gastev/2174504149/)_
 

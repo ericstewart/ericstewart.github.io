@@ -1,4 +1,5 @@
 title: Why did we do it that way?
+description: How Architecture Decision Records help teams remember and communicate why technical choices were made.
 date: 2016-10-27
 tags: design
 

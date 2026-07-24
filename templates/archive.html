@@ -7,11 +7,11 @@
 <section class="archive-list reveal">
     {% for post-group in post-groups %}
     <section class="archive-year">
-        <div class="archive-year-heading">{{post-group.year}}</div>
+        <h2 class="archive-year-heading">{{post-group.year}}</h2>
         <div class="archive-year-posts">
         {% for post-link in post-group.post-links %}
         <article class="archive-entry">
-            <time class="archive-entry-date">{{post-link.date}}</time>
+            <time class="archive-entry-date" datetime="{{post-link.date}}">{{post-link.date}}</time>
             <a class="archive-entry-title" href="{{post-link.url}}">{{post-link.title}}</a>
         </article>
         {% endfor %}
@@ -21,5 +21,5 @@
 </section>
 
 <div class="section-closing reveal">
-    <a href="#" class="text-link muted-link">Back to top</a>
+    <a href="#top" class="text-link muted-link">Back to top</a>
 </div>

@@ -1,4 +1,5 @@
 Title: Architectural Decisions Revisited
+Description: A return to Architecture Decision Records and why capturing “why we chose this” still matters.
 Date: 2024-03-23
 Tags: design
 

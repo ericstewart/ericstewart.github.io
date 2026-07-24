@@ -6,7 +6,9 @@
                   :blog-description "Ponderings on Software, etc."
                   :blog-root "https://www.eric-stewart.com"
                   :page-suffix ""
-                  :link-prev-next-posts true})
+                  :num-index-posts 6
+                  :link-prev-next-posts true
+                  :default-metadata {}})
          :requires ([quickblog.cli :as cli])
          quickblog {:doc "Start blogging quickly!"
                     :task (cli/dispatch base-opts)}}}

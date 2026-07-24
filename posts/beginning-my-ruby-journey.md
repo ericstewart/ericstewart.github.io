@@ -1,4 +1,5 @@
 Title: The Beginning of my Ruby Journey
+Description: A memory of discovering Ruby at RubyConf 2003 and how a small community event can shape a career.
 Date: 2024-04-07
 Image: assets/images/photos/irc2003-front-preview.jpeg
 Image-Alt: Front Logo of T-Shirt from RubyConf 2003
